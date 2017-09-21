@@ -1,0 +1,245 @@
+<html>
+    <head>
+        <title>Oinatariv</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Level5-3">
+        <meta name="author" content="Bowen Shen">
+        <link href="links.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer" rel="stylesheet">
+        
+        <style>
+            @keyframes breathing {
+                0%   {transform: scale(1);}
+                45%, 55%  {transform: scale(0.97);}
+                100% {transform: scale(1);}
+            }
+            
+            
+            
+            html{
+                background-color: #fafff4;
+            }
+            #outer{
+                overflow: hidden;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+            }
+            #i{
+                font-family: 'Abril Fatface', cursive;
+                font-size: 10em;
+                color: #545454;
+                position: absolute;
+                top: 4%;
+                left: 17%;
+            }
+            
+            #content{
+                position: absolute;
+                width: 25vh;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                hyphens: auto;
+                font-family: 'IM Fell Great Primer', serif;
+                font-size: 2.5vh;
+                color: white;
+            }
+            #finish{
+                font-family: 'Abril Fatface', cursive;
+                font-size: 4vh;
+                color: white;
+                position: absolute;
+                top: 70%;
+                right: 0;
+                padding-right: 1.5em;
+            }
+            #frame{
+                position: absolute;
+                width: 70%;
+                height: 70%;
+                left: 3vw;
+                top: 3vw;
+                border: .5em solid yellow;
+                border-top: 1.5em solid yellow;
+                animation: breathing 5s ease-in-out 3s infinite;
+            }
+            #triangle{
+                position: absolute;
+                top: 10%;
+                left: 12%;
+                width: 0;
+                height: 0;
+                border-top: 300px solid #fafff4;
+                border-right: 300px solid transparent;
+                
+            }
+            #circle{
+                position: absolute;
+                bottom: -35vh;
+                right: -15vh;
+                width: 80vh;
+                height: 80vh;
+                background: linear-gradient(to bottom right, #F2F8FF, blue);
+                border-radius: 40vh;
+                animation: breathing 5s ease-in-out 1s infinite;
+            
+            }
+            #rectangle{
+                position: absolute;
+                width: 70%;
+                height: 70%;
+                left: 15%;
+                top: 15%;
+                background: linear-gradient(to top left, #FCD5DA, red);
+                animation: breathing 5s ease-in-out infinite;
+            }
+            #deco1{
+                position: absolute;
+                top: 75%;
+                left: 10%;
+                border-left: 1em solid #4665f2;
+                height: 20vh;
+                opacity: .8;
+                border-radius: .5em;
+            }
+            #deco1-1{
+                position: absolute;
+                top: 72%;
+                left: 7%;
+                border-left: 1em solid #4665f2;
+                height: 20vh;
+                opacity: .8;
+                border-radius: .5em;
+            }
+            #deco2{
+                position: absolute;
+                top: 20%;
+                left: 80%;
+                border-top: 1.5em dotted yellow;
+                width: 15vw;
+                opacity: .5;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="links">
+            <a class="link" href="level%205-2.html" title="Previous">P</a>
+            <a class="link" href="home.html" title="Home">H</a>
+        </div>
+        
+        
+        <div id="outer">
+            <div id="deco2"></div>
+            <div id="rectangle"></div> 
+            <div id="triangle"></div>
+            <div id="deco1-1"></div>
+            <div id="frame"></div> 
+            <div id="circle"></div>
+            <div id="deco1"></div>
+            
+            
+            <div id='i'>I, <span id="name1"></span></div>
+
+            <div id="content" lang='en'>
+                <p>hereby swear to abandon all fear; to question everything; to trust in myself; to honor those before me as I excel, and to support those who follow as they ascend. I swear that I will never accept another's standard for success, as I set mine one measure higher.</p>
+            </div>
+
+            <div id="finish">When I am finished, <br>no one will ever fucking look at<div style="height:1em"> <span id="name2"></span></div>
+            the same way again.</div>
+
+        </div>
+    
+    </body>
+    
+    
+    <script>
+         window.onload = function() {
+            var humanName = ["Charlie Knight", 
+                           "Dylan Marshall", 
+                           "Thomas Holmes", 
+                           "George Read", 
+                           "Jake Fox", 
+                           "Bowen Levy", 
+                           "Rowan Gill",
+                           "Clem Lane", 
+                           "Zhan Xuegang",
+                           "Angel Wells", 
+                           "Rene Harvey", 
+                           "Trevon Stephens", 
+                           "Hamahona Arepata",
+                           "Felipe Kramer", 
+                           "Payton Barrera", 
+                           "Jagger Chavez", 
+                           "Aubrey Ball", 
+                           "Dang Van Tuyen",
+                           "Quinn Rodgers", 
+                           "Jaime Norman", 
+                           "Rory Mills", 
+                           "Brett Lopez", 
+                           "Raoul Glöckner",
+                           "Takai Yoritomo",
+                           "Blake Gibson"]; 
+
+            var objName = ["Morphing Bone Armor",
+                           "Antimatter Manipulation",
+                           "Diamond Skin",
+                           "Ink Secretion",
+                           "Technopathy",
+                           "Time Travel",
+                           "Control Glass",
+                           "Generate Energy Life Forms",
+                           "Control Glass",
+                           "Projected Thermography",
+                           "Two Extra Arms With Super Strength",
+                           "Slowed Aging",
+                           "Offspring Detection",
+                           "Claircognizance",
+                           "Molten Metal Skin",
+                           "Absorb Powers",
+                           "Control Microwaves",
+                           "Thorned Skin",
+                           "Detach And Regenerate Limbs",
+                           "Steel Skin"];
+            var name1 = document.getElementById('name1');
+            var name2 = document.getElementById('name2');
+            var i = 0, j = 0;
+             
+             setInterval ( changeHumanName, 150 );
+             setInterval ( changeObjName, 150 );
+             
+             function changeHumanName(){
+                 var size = Math.random()*0.6 + 0.4; // change level of control over size
+                 var col1 = 150;
+                 var col2 = 150;
+                 var col3 = Math.floor(Math.random()*50)+200;
+                 
+                 var transparency = Math.random();
+                 name1.innerHTML = humanName[i];
+                 name1.style.fontSize = size +'em';
+                 name1.style.color = "rgba(0,0,0" + transparency +")";
+                 if(i < humanName.length){i++;}else{i=0;}
+             }
+             function changeObjName(){
+                 var size = Math.random()*0.4 + 0.6;
+                 var col1 = Math.floor(Math.random()*50)+200;
+                 var col2 = 125;
+                 var col3 = Math.floor(Math.random()*50)+200;
+                 var transparency = Math.random();
+                 name2.innerHTML = objName[j];
+                 name2.style.fontSize = size +'em';
+                 name2.style.color = "rgba(255,255,255" + transparency +")";
+                 j < objName.length? j++: j=0;
+             }
+             
+             
+         }
+         
+        
+    </script>
+    
+</html>

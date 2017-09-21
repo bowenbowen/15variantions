@@ -1,0 +1,18 @@
+#links{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 1em;
+    z-index: 999;
+}
+.link{
+    font-weight: bold;
+    font-size: 1.8em;
+    margin:.5em;
+    opacity: .5;
+    transition: all 0.3s ease;
+}
+.link:hover{
+    opacity: 1;
+    font-size: 2em;
+}

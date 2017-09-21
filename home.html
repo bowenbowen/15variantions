@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Home">
+        <meta name="author" content="Bowen Shen">
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+        
+        <style>
+            html{
+                font-family: 'Permanent Marker', cursive;  
+/*                background-color: azure;*/
+            }
+            h1{
+                 
+                font-weight: 700;
+                letter-spacing: .5em;
+                font-size: 10vh;
+                color: #38414f;
+                position: absolute;
+                left: 50%;
+                top: 5%;
+                transform: translate(-50%, -50%);
+                transition: all 0.3s ease;
+            }
+            h2{  
+                font-weight: 400;
+                letter-spacing: .5em;
+                font-size: 3vh;
+                color: #38414f;
+                position: absolute;
+                left: 50%;
+                top: 20%;
+                transform: translate(-50%, -50%);
+                transition: all 0.3s ease;
+            }
+            h1:hover,h2:hover{
+                opacity: .5;
+            }
+            h3{
+                margin: 0 auto;
+                font-weight: 400;
+                font-size: 5vh;
+                color: #38414f;
+/*                position: absolute;*/
+                
+/*                transform: translate(-50%, -50%);*/
+                transition: all 0.3s ease;
+            }
+            ol{
+                
+                list-style-type: none;
+                margin: 10px;
+                padding: 0;
+            }
+            li{
+                
+                margin:10px;
+            }
+            
+            .section{
+                border-radius: 25px;
+                margin: .8em;
+                display: inline-block;
+                top: 40%;
+                padding-left: 1.5em;
+                padding-top: 1.5em;
+                padding-bottom: 40px;
+                border: 3px solid #38414f;
+                width: 15%;
+                height: 50%;
+                min-width: 100px;;
+                transition: all .6s ease;
+            }
+            #container{
+                letter-spacing: .1em;
+                position: absolute;
+                top: 40%;
+                width: 100%;
+/*                height: 100%;*/
+            }
+            #level1:hover ~ #level2,
+            #level1:hover ~ #level3,
+            #level1:hover ~ #level4,
+            #level1:hover ~ #level5{
+                opacity: .3;
+                transform: scale(.9);
+            }
+            #level2:hover ~ #level3,
+            #level2:hover ~ #level4,
+            #level2:hover ~ #level5{
+                opacity: .3;
+                transform: scale(.9);
+            }
+            #level3:hover ~ #level4,
+            #level3:hover ~ #level5{
+                opacity: .3;
+                transform: scale(.9);
+            }
+            #level4:hover ~ #level5{
+                opacity: .3;
+                transform: scale(.9);
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <header>
+            <h1>Home</h1>
+            <h2>15 Variations by Bowen Shen</h2>
+        </header>
+
+        <section id="container">
+            
+            <section class="section" id="level1">
+                <h3>Level 1</h3>
+                <ol>
+                    <li><a href="level%201-1.html">1-1</a></li>
+                    <li><a href="level%201-2.html">1-2</a></li>
+                    <li><a href="level%201-3.html">1-3</a></li>
+                </ol>
+            </section>
+
+            <section class="section" id="level2">
+                <h3>Level 2</h3>
+                <ol>
+                    <li><a href="level%202-1.html">2-1</a></li>
+                    <li><a href="level%202-2.html">2-2</a></li>
+                    <li><a href="level%202-3.html">2-3</a></li>
+                </ol>
+            </section>
+            
+            <section class="section" id="level3">
+                <h3>Level 3</h3>
+                <ol>
+                    <li><a href="level%203-1.html">3-1</a></li>
+                    <li><a href="level%203-2.html">3-2</a></li>
+                    <li><a href="level%203-3.html">3-3</a></li>
+                </ol>
+            </section>
+            
+            <section class="section" id="level4">
+                <h3>Level 4</h3>
+                <ol>
+                    <li><a href="level%204-1.html">4-1</a></li>
+                    <li><a href="level%204-2.html">4-2</a></li>
+                    <li><a href="level%204-3.html">4-3</a></li>
+                </ol>
+            </section>
+            
+            <section class="section" id="level5">
+                <h3>Level 5</h3>
+                <ol>
+                    <li><a href="level%205-1.html">5-1</a></li>
+                    <li><a href="level%205-2.html">5-2</a></li>
+                    <li><a href="level%205-3.html">5-3</a></li>
+                </ol>
+            </section>
+        </section>
+        
+    </body>
+    
+</html>

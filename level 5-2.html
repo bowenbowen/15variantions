@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Naviartoin</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Level5-1">
+        <meta name="author" content="Bowen Shen">
+        <link href="links.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=IM+Fell+Great+Primer" rel="stylesheet">
+            
+        <style>
+
+        .text {
+            letter-spacing: 1.1em;
+            line-height: 250%;
+            }
+            
+            #manifesto{
+                position: absolute;
+                padding: 2em;
+                width: 98%;
+                font-family: 'IM Fell Great Primer', serif;
+                z-index: -1
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        
+        <div id="links">
+            <a class="link" href="level%205-1.html" title="Previous">P</a>
+            <a class="link" href="home.html" title="Home">H</a>
+            <a class="link" href="level%205-3.html" title="Next">N</a>
+        </div>
+    
+        <div id="manifesto" lang='en'>
+                <span></span>
+        </div>
+
+        <script type="text/javascript">
+            
+            window.onload = function() {
+  
+                var content = "I, Shne Owenb, hereby swear to abandon all fear; to question everything; to trust in myself; to honor those before me as I excel, and to support those who follow as they ascend. I swear that I will never accept another's standard for success, as I set mine one measure higher. When I am finished, no one will ever fucking look at Holographic Projection the same way again."
+                var words = content.split(" ");
+                console.log(words);
+
+                var target = document.getElementById('manifesto');
+
+
+                for(var i=0; i< words.length; i++){
+                    target.innerHTML += ("<span class=text id=span"+ i +">" + words[i] + " </span></div>");
+                    document.getElementById("span"+i).style.filter = 'blur('+i*0.15+'px)';
+//                    document.getElementById("span"+i).style.fontSize = .8+i*0.06+'em';
+                    document.getElementById("span"+i).style.fontSize = 3-i*0.06+'em';
+                }
+            }
+        </script>
+
+    </body>
+    
+</html>

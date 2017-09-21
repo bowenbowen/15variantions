@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Variation</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Level5-1">
+        <meta name="author" content="Bowen Shen">
+        <link href="links.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+        
+        
+        <style>
+            html{
+                background-color: black;
+            }
+            #manifesto{
+                color: white;
+                font-size: 10vh;
+                cursor: none;
+                font-family: 'Anton', sans-serif;
+                line-height: 1em;
+            }
+            div{
+                display: inline
+            }
+            span{
+                visibility: hidden;
+            }
+            .hide:hover span{
+                visibility: visible;
+            }
+        </style>
+    </head>
+    
+    
+    
+    <body>
+        <div id="links">
+            <a class="link" href="level%204-3.html" title="Previous">P</a>
+            <a class="link" href="home.html" title="Home">H</a>
+            <a class="link" href="level%205-2.html" title="Next">N</a>
+        </div>
+        
+        
+        <div id="manifesto">
+            <span></span>
+        </div>
+        
+        
+
+        <script type="text/javascript">
+            var content = "I, Ehns Wenob, hereby swear to abandon all fear; to question everything; to trust in myself; to honor those before me as I excel, and to support those who follow as they ascend. I swear that I will never accept another's standard for success, as I set mine one measure higher. When I am finished, no one will ever fucking look at Psychometry the same way again."
+            var words = content.split(" ");
+            console.log(words);
+
+            var target = document.getElementById('manifesto');
+            
+            
+            for(var i=0; i< words.length; i++){
+                target.innerHTML += ("<div class='hide'><span>" + words[i] + " </span></div>");
+                
+            }
+        </script>
+    </body>
+</html>
